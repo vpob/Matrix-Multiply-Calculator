@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type=text/css href="css/style.css" />
+	<title>Multiply Matrix</title>
+    <script type="text/javascript" src="script/jquery.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
+</head>	
+<body>
+    
+   <div class="container">  
+        <div class="left">
+            <div id="ParentForContent" nmousedown="return false" onselectstart="return false">
+                <div class="multButton">Умножить матрицы</div>
+                
+                <div class="clearMatrix button" tabindex="1">&#8630; Очистить матрицы</div>
+                <div class="switchMatrix button" tabindex="0">&#8645; Поменять матрицы местами</div>
+            
+                    <div class="radioButton">
+                    <label>
+                    <input type="radio" name="matrixRad" value="0">Матрица А</label>
+                    <label>
+                    <input type="radio" name="matrixRad" value="1">Матрица B</label>
+                    </div>
+                <div class="addRemRow">
+                    <div class="addButton button" tabindex="0">
+                        <span>&#x2795;</span> Добавить</div>
+                    <div class="remButton button" tabindex="0">
+                        <span>&#x2796;</span> Удалить</div>
+                    строку
+                </div>
+                <div class="addRemCol">
+                    <div class="addButton button" tabindex="0">
+                        <span>&#x2795;</span> Добавить</div>
+                    <div class="remButton button" tabindex="0">
+                        <span>&#x2796;</span> Удалить</div>
+                    столбец
+                </div>
+            </div>
+                <div id="errBlock" >
+                    <p>Такие матрицы нельзя перемножить, так как количество солбцов матрицы А не равно количеству строк матрицы В.</p>
+                </div>
+        </div>
+        <div class="right">
+                    <div class="solutionMatrix solMatBorder" >
+                        <table class="solMatrixTable solMatTableBorder">
+                            <tr>
+                              <td><input disabled class="matInput" type="text" placeholder="c1,1" /></td>
+                              <td><input disabled class="matInput" type="text" placeholder="c1,2" /></td>
+                              <td><input disabled class="matInput" type="text" placeholder="c1,3" /></td>
+                            </tr>
+                            <tr>
+                              <td><input disabled class="matInput" type="text" placeholder="c2,1" /></td>
+                              <td><input disabled class="matInput" type="text" placeholder="c2,2" /></td>
+                              <td><input disabled class="matInput" type="text" placeholder="c2,3" /></td>
+                            </tr>
+                            <tr>
+                              <td><input disabled class="matInput" type="text" placeholder="c3,1" /></td>
+                              <td><input disabled class="matInput" type="text" placeholder="c3,2" /></td>
+                              <td><input disabled class="matInput" type="text" placeholder="c3,3" /></td>
+                            </tr>
+                      </table>
+                </div>
+                    <div class="aMatrix aMatBorder">
+                        <table class="aMatTable aMatTableBorder">
+                              <tr>
+                              <td><input class="matInput col1" type="text" placeholder="a1,1" /></td>
+                              <td><input class="matInput col2" type="text" placeholder="a1,2" /></td>
+                            </tr>
+                            <tr>
+                              <td><input class="matInput col1" type="text" placeholder="a2,1" /></td>
+                              <td><input class="matInput col2" type="text" placeholder="a2,2" /></td>
+                            </tr>
+                            <tr>
+                              <td><input class="matInput col1" type="text" placeholder="a3,1" /></td>
+                              <td><input class="matInput col2" type="text" placeholder="a3,2" /></td>
+                            </tr>
+                            <tr>
+                              <td><input class="matInput col1" type="text" placeholder="a4,1" /></td>
+                              <td><input class="matInput col2" type="text" placeholder="a4,2" /></td>
+                            </tr>
+                            <tr>
+                              <td><input class="matInput col1" type="text" placeholder="a5,1" /></td>
+                              <td><input class="matInput col2" type="text" placeholder="a5,2" /></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="nameMatA">
+                        <h6>А</h6>
+                    </div>
+                    <div class="bMatrix bMatBorder">
+                         <table class="bMatTable bMatTableBorder">
+                             <tr>
+                              <td><input class="matInput col1" type="text" placeholder="b1,1" /></td>
+                              <td><input class="matInput col2" type="text" placeholder="b1,2" /></td>
+                              <td><input class="matInput col3" type="text" placeholder="b1,3" /></td>
+                              <td><input class="matInput col4" type="text" placeholder="b1,4" /></td>
+                              <td><input class="matInput col5" type="text" placeholder="b1,5" /></td>
+                            </tr>
+                            <tr>
+                              <td><input class="matInput col1" type="text" placeholder="b2,1" /></td>
+                              <td><input class="matInput col2" type="text" placeholder="b2,2" /></td>
+                              <td><input class="matInput col3" type="text" placeholder="b2,3" /></td>
+                              <td><input class="matInput col4" type="text" placeholder="b2,4" /></td>
+                              <td><input class="matInput col5" type="text" placeholder="b2,5" /></td>
+
+                        </table>
+                    </div>
+                    <div id="nameMatB">
+                        <h6>B</h6>
+                    <div id="valueError">Please use only numbers !</div>
+                
+        </div>
+   </div>
+</body>
+</html>
